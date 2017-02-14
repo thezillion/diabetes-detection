@@ -16,6 +16,12 @@ class Model(object):
         b=np.array(ds['class'])
         a=a.reshape(536,4)
         clt=svm.LinearSVC()
-        pickle.dump(clt.fit(a,b),"model.txt")
+        s = pickle.dumps(clt.fit(a,b))
+        with open('model','wb') as f:
+            f.write(s)
+
+if __name__ == '__main__':
+    obj = Model('balanced.csv')
+    obj.loadfile()
     
          

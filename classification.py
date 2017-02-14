@@ -8,7 +8,9 @@ class Classify(object):
 
     def __init__(self,filename):
         self.filename=filename
-        pickle.load("model.txt")
+        with open('model','rb') as f:
+            s = f.read()
+        pickle.loads(s)
 
     def predict(self,glucose,blood_pressure,insulin,bmi):
         names=['sno','preg','glu','bp','skin','insulin','bmi','pedigree','age','class']

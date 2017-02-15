@@ -21,13 +21,15 @@ jQuery(document).ready(function() {
     $('.registration-form input[type="text"], .registration-form input[type="password"], .registration-form textarea').on('focus', function() {
     	$(this).removeClass('input-error');
     });
+
+    var fields = 'input[type="text"], input[type="email"], input[type="number"], select';
     
     // next step
     $('.registration-form .btn-next').on('click', function() {
     	var parent_fieldset = $(this).parents('fieldset');
     	var next_step = true;
     	
-    	parent_fieldset.find('input[type="text"], input[type="password"], textarea').each(function() {
+    	parent_fieldset.find(fields).each(function() {
     		if( $(this).val() == "" ) {
     			$(this).addClass('input-error');
     			next_step = false;
@@ -55,7 +57,7 @@ jQuery(document).ready(function() {
     // submit
     $('.registration-form').on('submit', function(e) {
     	
-    	$(this).find('input[type="text"], input[type="password"], textarea').each(function() {
+    	$(this).find(fields).each(function() {
     		if( $(this).val() == "" ) {
     			e.preventDefault();
     			$(this).addClass('input-error');

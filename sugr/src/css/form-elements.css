@@ -24,7 +24,9 @@ select {
 }
 
 input[type="text"]::-webkit-input-placeholder, 
-input[type="password"]::-webkit-input-placeholder, 
+input[type="password"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder, 
+input[type="number"]::-webkit-input-placeholder, 
 textarea::-webkit-input-placeholder, 
 textarea.form-control::-webkit-input-placeholder {
     color: white !important;

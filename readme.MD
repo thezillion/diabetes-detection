@@ -1,11 +1,32 @@
-Diabetes Detection
+#Sugr 
+
+Web Application , capable of forecasting and prediction of diabetes.
+
+Built for *Fugeniz Hackathon*
+
+## Diabetes Detection API: 
   
-  Predicts if a given user has diabetes or not, given their bmi, blood pressure, glucose level and insulin level.
+  Predicts if a given user has diabetes or not on the basis of their BMI , Blood Pressure , Glucose and Insulin levels.
 
-  The classifier is trained using a SVM Model on the formatted dataset data.csv. Returns 0 if diabetic 1 for not.
+  The classifier is trained and tested using a SVM Model on the formatted dataset *data.csv* . 
+  
+  Returns **0** if diabetic, else **1**  
 
-Branch Details:
-  backend branch has backend for the web. Done using Django.
-  frontend branch has the user interface. Done using HTML and ReactJS.
-  visualization branch has MatLib plots for the dataset used.
-  newbackend branch has the backend developed using Flask.
+## Branch Details: 
+
+  
+  * Backend Branch : 
+  
+    * Has the backend implemented using *Django*.
+  
+  * Frontend Branch : 
+  
+    * Contains the UI , built using *HTML* and *ReactJS*
+  
+  * Visualization Branch :
+  
+    * Contains various *Matplotlib* plots generated after the tests.
+  
+  * newbackend Branch :
+  
+    * Implementation of the backend developed using *Flask*.

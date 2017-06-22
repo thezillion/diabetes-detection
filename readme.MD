@@ -2,7 +2,7 @@
 
 Web Application , capable of forecasting and prediction of diabetes.
 
-Built for *Fugeniz Hackathon*
+Built during *[Fugeniz Hackathon](http://www.hackathon.io/sugr)*
 
 ## Diabetes Detection API: 
   
@@ -30,3 +30,11 @@ Built for *Fugeniz Hackathon*
   * newbackend Branch :
   
     * Implementation of the backend developed using *Flask*.
+
+## Team
+
+1. [Navin Mohan](https://github.com/nvnmo)
+2. [Arjun Nair](https://github.com/batman-nair)
+3. Siva R
+4. [Prince Mathew](https://github.com/thezillion)
+5. Riza

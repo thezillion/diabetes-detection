@@ -1,4 +1,4 @@
-#Sugr 
+# Sugr 
 
 Web Application , capable of forecasting and prediction of diabetes.
 
